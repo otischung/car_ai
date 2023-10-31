@@ -54,7 +54,6 @@ public class Robot : MonoBehaviour
             Util.GetOrAddComponent<MotorMoveForward>(transform, "right_back_forward_wheel"),
             // Util.GetOrAddComponent<MotorMoveForward>(transform, "right_front_forward_wheel"),
         };
-
    
 
     
@@ -147,13 +146,13 @@ public class Robot : MonoBehaviour
 
     public void DoAction(Action action)
     {   
-
-        
-
         ////rear engine
-        motorListMF[0].SetVoltage(action.voltage[0]);
-        motorListMF[1].SetVoltage(action.voltage[1]);
-
+        // motorListMF[0].SetVoltage(action[0]);
+        // motorListMF[1].SetVoltage(action[1]);
+        
+        motorListMF[0].SetVoltage((float)action.voltage[0]);
+        
+        motorListMF[1].SetVoltage((float)action.voltage[1]);
     }
 
     public float getTargetAngle(Vector2 pos, Vector2 targetPos)

@@ -32,7 +32,7 @@ public class State
     // public float minRange { get; set; }
     // public Vector3 minRangeDirection { get; set; }
 
-    public Vector3 ROS2TargetPosition { get; set; }
+    public Vector3 ROS2TargetPosition { get; set; } //3 4 5
     public Vector3 ROS2PathPositionClosest { get; set; }
     public Vector3 ROS2PathPositionSecondClosest { get; set; }
     public Vector3 ROS2PathPositionFarthest { get; set; }
